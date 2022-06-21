@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Roboto:wght@400;500;700;800;900&display=swap');
 :root{
-    --main-color: #a066c9;
+    --main-color: #ff7700;
 }
 body{
     font-family: "Roboto", sans-serif ;
     line-height: 1.8;
 }
 .text-main-color{
-    color: var(--main-color);
+    color: var(--main-color) !important;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 900 !important;
@@ -20,6 +20,7 @@ a {
 }
 ul{
     list-style: none;
+   
 }
 
 img{
@@ -38,7 +39,7 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background:rgba(18, 16, 126, 0.4);
+    background:rgba(119, 109, 57, 0.3);
     z-index: -1;
 }
 /* -----navBar------ */
@@ -47,20 +48,26 @@ section{
 }
 .navbar .navbar-brand{
     color: var(--main-color);
-    font-size: 30px;
-    text-shadow: 0 0 4px #fff;
+    font-size: 35px;
+    text-shadow: 4px 2px 4px #0d113d,
+    6px 4px 6px #0d113d;
+    
 }
 .navbar-nav .nav-item .nav-link{
     color: #fff;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 500;
 }
 .navbar-nav .nav-item:hover .nav-link{
-    color: var(--main-color);
+    color: #0d113d;
+    text-shadow: 4px 2px 4px #fff,
+    6px 4px 6px #fff;
 }
 .navbar-nav .nav-item .nav-link.active{
-    color: var(--main-color);
-    text-shadow: 0 0 4px #fff;
+    color: #0d113d;
+    font-weight: 500;
+    text-shadow: 4px 2px 4px #fff,
+    6px 4px 6px #fff;
 
 }
 /* *******BAnner******** */
@@ -126,8 +133,7 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 5px;
-    background:rgba(18, 16, 126, 0.4);
+    border-radius: 5px;background:rgba(119, 109, 57, 0.374);
 }
 .creative_img img{
     width: 100%;
@@ -155,3 +161,113 @@ section{
 
 /* ---------Services------- */
 
+.ser-box{
+    width: 100%;
+    height: 380px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.ser-box img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.box-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    background:rgba(119, 109, 57, 0.374);
+    background: linear-gradient(to top , rgba(119, 109, 57, 0.8) 40%, rgba(119, 109, 57, 0.03))30% ;
+}
+.ser-box p{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+}
+.all-service{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #6a5a00;
+}
+.all-service p{
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+}
+.all-service .divider4{
+    position: absolute;
+    bottom: 18%;
+    right: 31%;
+    width: 100px;
+    height: 6px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+/* ****Support**** */
+
+
+
+.support_info{
+    padding: 0 10px;
+}
+.woman_img{
+    position: relative;
+    height: 420px;
+    width: 100%;
+}
+.woman_img img{
+    position: absolute;
+    max-width: 40%;
+    bottom: 0;
+    right: 20%;
+}
+.support_info ul , .support_info Li{
+    padding: 0;
+    list-style:circle;
+    font-size: 20px;
+}
+
+/* -----protfolio------ */
+
+.portfolio_img{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.portfolio_img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* -----------Footer--------- */
+
+footer{
+    background: #0d113d;
+}
+
+.footer-logo a{
+    font-size: 50px;
+    color: var(--main-color) ;
+    text-shadow: 4px 2px 4px #fff;
+
+}
+
+.useful-link ul li a{
+    color: #fff;
+    line-height: 33px;
+    
+}
+
+.notice{
+    color: #fff;
+}
