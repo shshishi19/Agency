@@ -12,7 +12,9 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-weight: 900 !important;
 }
-
+P{
+    text-align: justify;
+}
 a {
     text-decoration: none;
     transition: all 0.4s ease;
@@ -39,18 +41,18 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background:rgba(119, 109, 57, 0.3);
+    background:rgba(119, 109, 57, 0.5);
     z-index: -1;
 }
 /* -----navBar------ */
 .navbar{
-    background:rgba(0, 0, 0, 0.2);
+    background: #0d113d;
 }
 .navbar .navbar-brand{
     color: var(--main-color);
     font-size: 35px;
-    text-shadow: 4px 2px 4px #0d113d,
-    6px 4px 6px #0d113d;
+    text-shadow: 4px 2px 4px #000001,
+    6px 4px 6px #000001;
     
 }
 .navbar-nav .nav-item .nav-link{
@@ -59,16 +61,11 @@ section{
     font-weight: 500;
 }
 .navbar-nav .nav-item:hover .nav-link{
-    color: #0d113d;
-    text-shadow: 4px 2px 4px #fff,
-    6px 4px 6px #fff;
+    color: var(--main-color);
 }
 .navbar-nav .nav-item .nav-link.active{
-    color: #0d113d;
+    color: var(--main-color);
     font-weight: 500;
-    text-shadow: 4px 2px 4px #fff,
-    6px 4px 6px #fff;
-
 }
 /* *******BAnner******** */
 
@@ -271,3 +268,63 @@ footer{
 .notice{
     color: #fff;
 }
+
+
+/* ********aboutPage********* */
+.aboutBanner{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient( rgba(119, 109, 57, 0.3) , rgba(119, 109, 57, 0.8) ) , url(./img/aboutPageBanner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+}
+
+.breadcrumb .breadcrumb-item a{
+    color: #ffff !important;
+}
+.breadcrumb .breadcrumb-item .active{
+    color: var(--main-color) !important;
+}
+
+.divider5{
+    right: 31%;
+    width: 100px;
+    height: 6px;
+    border-radius: 5px;
+    background: var(--main-color);
+}
+
+/* ********Menu******* */
+.accordion-body ul li a{
+    color: #000;
+}
+.accordion-body ul li a:hover{
+    color: var(--main-color);
+}
+
+
+
+
+/* *********Contact Page******** */
+
+.con_info{
+    color: #0d113d;
+}
+
+.infoIcon{
+    margin: auto;
+    max-width: 50%;
+}
+.infoIcon i{
+    padding: 0 1.5rem;
+    font-size: 7rem;
+    color: #999999;
+}
+
+.contact_form form input::placeholder,
+.contact_form form textarea::placeholder{
+    color: #ff7700;
+}
+
