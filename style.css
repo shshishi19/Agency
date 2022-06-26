@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Roboto:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500;1,700&display=swap');
 :root{
     --main-color: #ff7700;
 }
 body{
-    font-family: "Roboto", sans-serif ;
+    font-family: "Poppins", sans-serif ;
     line-height: 1.8;
 }
 .text-main-color{
@@ -327,4 +327,45 @@ footer{
 .contact_form form textarea::placeholder{
     color: #ff7700;
 }
+
+/* ***********AboutPage*********** */
+
+.divider5{
+    width: 150px;
+    height: 8px;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+.about_box1{
+    border-radius: 5px;
+    width: 100%;
+    height: 400px;
+    background: #0d113d;
+}
+
+.about_box2{
+    border-radius: 5px;
+    width: 100%;
+    height: 400px;
+    background: var(--main-color);
+    color: #fff;
+}
+
+.about_box2 i{
+    font-size: 14rem;
+}
+
+
+/* .......Slogan...... */
+
+
+#aboutSlogan{
+    background:  linear-gradient( rgba(119, 109, 57, 0.3) , rgba(119, 109, 57, 0.8) ) , url(./img/aboutSlogan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
 
